@@ -1,0 +1,344 @@
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+Welcome to the NIX data model Matlab package!
+
+* You can browse the documentation using "doc nix". 
+* The help command for classes and methods provide basic usage examples.
+* More detailed examples can be found in the "examples" and "tests" folders.
+
+
+starting tests
+
+Execute FILE tests:
+
+Test testReadOnly ... OK
+Test testReadWrite ... OK
+Test testOverwrite ... OK
+Test testIsOpen ... OK
+Test testFileMode ... OK
+Test testValidate ... OK
+Test testCreateBlock ... OK
+Test testBlockCount ... OK
+Test testCreateSection ... OK
+Test testSectionCount ... OK
+Test testFetchBlock ... OK
+Test testFetchSection ... OK
+Test testOpenSection ... OK
+Test testOpenSectionIdx ... OK
+Test testOpenBlock ... OK
+Test testOpenBlockIdx ... OK
+Test testDeleteBlock ... OK
+Test testDeleteSection ... OK
+Test testHasBlock ... OK
+Test testHasSection ... OK
+Test testFilterSection ... OK
+Test testFilterBlock ... OK
+Test testFindSection ... OK
+Test testFindSectionFiltered ... OK
+
+Execute BLOCK tests:
+
+Test testAttributes ... OK
+Test testCreateDataArray ... OK
+Test testCreateDataArrayFromData ... OK
+Test testDeleteDataArray ... OK
+Test testCreateTag ... OK
+Test testDeleteTag ... OK
+Test testCreateMultiTag ... OK
+Test testDeleteMultiTag ... OK
+Test testCreateSource ... OK
+Test testDeleteSource ... OK
+Test testListArrays ... OK
+Test testListSources ... OK
+Test testListTags ... OK
+Test testListMultiTags ... OK
+Test testOpenDataArray ... OK
+Test testOpenTag ... OK
+Test testOpenMultiTag ... OK
+Test testOpenSource ... OK
+Test testOpenGroupIdx ... OK
+Test testOpenDataArrayIdx ... OK
+Test testOpenTagIdx ... OK
+Test testOpenMultiTagIdx ... OK
+Test testOpenSourceIdx ... OK
+Test testHasDataArray ... OK
+Test testHasSource ... OK
+Test testHasMultiTag ... OK
+Test testHasTag ... OK
+Test testSetMetadata ... OK
+Test testOpenMetadata ... OK
+Test testCreateGroup ... OK
+Test testHasGroup ... OK
+Test testOpenGroup ... OK
+Test testDeleteGroup ... OK
+Test testGroupCount ... OK
+Test testDataArrayCount ... OK
+Test testTagCount ... OK
+Test testMultiTagCount ... OK
+Test testSourceCount ... OK
+Test testCompare ... OK
+Test testFilterSource ... OK
+Test testFilterGroup ... OK
+Test testFilterTag ... OK
+Test testFilterMultiTag ... OK
+Test testFilterDataArray ... OK
+Test testFindSource ... OK
+Test testFindSourceFiltered ... OK
+
+Execute GROUP tests:
+
+Test testAttributes ... OK
+Test testAddDataArray ... OK
+Test testAddDataArrays ... OK
+Test testHasDataArray ... OK
+Test testOpenDataArray ... OK
+Test testRemoveDataArray ... OK
+Test testUpdateLinkedDataArray ... OK
+Test testDataArrayCount ... OK
+Test testAddTag ... OK
+Test testAddTags ... OK
+Test testHasTag ... OK
+Test testOpenTag ... OK
+Test testRemoveTag ... OK
+Test testTagCount ... OK
+Test testAddMultiTag ... OK
+Test testAddMultiTags ... OK
+Test testHasMultiTag ... OK
+Test testOpenMultiTag ... OK
+Test testRemoveMultiTag ... OK
+Test testMultiTagCount ... OK
+Test testAddSource ... OK
+Test testAddSources ... OK
+Test testRemoveSource ... OK
+Test testHasSource ... OK
+Test testFetchSources ... OK
+Test testOpenSource ... OK
+Test testSourceCount ... OK
+Test testSetMetadata ... OK
+Test testOpenMetadata ... OK
+Test testOpenDataArrayIdx ... OK
+Test testOpenTagIdx ... OK
+Test testOpenMultiTagIdx ... OK
+Test testOpenSourceIdx ... OK
+Test testCompare ... OK
+Test testFilterSource ... OK
+Test testFilterTag ... OK
+Test testFilterMultiTag ... OK
+Test testFilterDataArray ... OK
+
+Execute SOURCE tests:
+
+Test testCreateSource ... OK
+Test testDeleteSource ... OK
+Test testAttributes ... OK
+Test testFetchSources ... OK
+Test testHasSource ... OK
+Test testOpenSource ... OK
+Test testOpenSourceIdx ... OK
+Test testSourceCount ... OK
+Test testParentSource ... OK
+Test testSetMetadata ... OK
+Test testOpenMetadata ... OK
+Test testReferringDataArrays ... OK
+Test testReferringTags ... OK
+Test testReferringMultiTags ... OK
+Test testCompare ... OK
+Test testFilterSource ... OK
+Test testFindSource ... OK
+Test testFilterFindSource ... OK
+
+Execute DATAARRAY tests:
+
+Test testAttributes ... OK
+Test testOpenData ... OK
+Test testSetMetadata ... OK
+Test testOpenMetadata ... OK
+Test testListSources ... OK
+Test testWriteDataDouble ... OK
+Test testWriteDataLogical ... OK
+Test testWriteDataFloat ... OK
+Warning: Writing Float data to an Integer DataArray
+Warning: Writing Float data to an Integer DataArray
+Warning: Writing Float data to an Integer DataArray
+Warning: Writing Float data to an Integer DataArray
+Warning: Writing Float data to an Integer DataArray
+Warning: Writing Float data to an Integer DataArray
+Warning: Writing Float data to an Integer DataArray
+Warning: Writing Float data to an Integer DataArray
+Test testWriteDataInteger ... OK
+Test testAddSource ... OK
+Test testAddSources ... OK
+Test testOpenSource ... OK
+Test testOpenSourceIdx ... OK
+Test testRemoveSource ... OK
+Test testHasSource ... OK
+Test testSourceCount ... OK
+Test testDimensions ... OK
+Test testOpenDimensionIdx ... OK
+Test testDimensionCount ... OK
+Test testDatatype ... OK
+Test testSetDataExtent ... OK
+Test testCompare ... OK
+Test testFilterSource ... OK
+
+Execute TAG tests:
+
+Test testAddSource ... OK
+Test testAddSources ... OK
+Test testRemoveSource ... OK
+Test testAddReference ... OK
+Test testAddReferences ... OK
+Test testRemoveReference ... OK
+Test testCreateFeature ... OK
+Test testDeleteFeature ... OK
+Test testFetchReferences ... OK
+Test testReferenceCount ... OK
+Test testFetchSources ... OK
+Test testFetchFeatures ... OK
+Test testFeatureCount ... OK
+Test testOpenSource ... OK
+Test testOpenSourceIdx ... OK
+Test testHasSource ... OK
+Test testSourceCount ... OK
+Test testOpenFeature ... OK
+Test testOpenFeatureIdx ... OK
+Test testOpenReference ... OK
+Test testOpenReference_idx ... OK
+Test testSetMetadata ... OK
+Test testOpenMetadata ... OK
+Test testRetrieveData ... OK
+Test testRetrieveDataIdx ... OK
+Test testRetrieveFeatureData ... OK
+Test testRetrieveFeatureDataIdx ... OK
+Test testAttributes ... OK
+Test testHasFeature ... OK
+Test testHasReference ... OK
+Test testCompare ... OK
+Test testFilterSource ... OK
+Test testFilterReference ... OK
+Test testFilterFeature ... OK
+
+Execute MULTITAG tests:
+
+Test testAddSource ... OK
+Test testAddSources ... OK
+Test testRemoveSource ... OK
+Test testAddReference ... OK
+Test testAddReferences ... OK
+Test testHasReference ... OK
+Test testRemoveReference ... OK
+Test testCreateFeature ... OK
+Test testHasFeature ... OK
+Test testDeleteFeature ... OK
+Test testFetchReferences ... OK
+Test testFetchSources ... OK
+Test testFetchFeatures ... OK
+Test testOpenSource ... OK
+Test testOpenSourceIdx ... OK
+Test testHasSource ... OK
+Test testSourceCount ... OK
+Test testOpenFeature ... OK
+Test testOpenFeatureIdx ... OK
+Test testOpenReference ... OK
+Test testOpenReferenceIdx ... OK
+Test testFeatureCount ... OK
+Test testReferenceCount ... OK
+Test testSetPositions ... OK
+Test testHasPositions ... OK
+Test testOpenPositions ... OK
+Test testSetOpenExtents ... OK
+Test testSetMetadata ... OK
+Test testOpenMetadata ... OK
+Test testRetrieveData ... OK
+Test testRetrieveDataIdx ... OK
+Test testRetrieveFeatureData ... OK
+Test testRetrieveFeatureDataIdx ... OK
+Test testSetUnits ... OK
+Test testAttributes ... OK
+Test testCompare ... OK
+Test testFilterSource ... OK
+Test testFilterReference ... OK
+Test testFilterFeature ... OK
+
+Execute SECTION tests:
+
+Test testCreateSection ... OK
+Test testDeleteSection ... OK
+Test testListSubsections ... OK
+Test testOpenSection ... OK
+Test testOpenSectionIdx ... OK
+Test testParent ... OK
+Test testHasSection ... OK
+Test testSectionCount ... OK
+Test testAttributes ... OK
+Test testProperties ... OK
+Test testCreateProperty ... OK
+Test testCreatePropertyWithValue ... ERROR
+	Struct contents reference from a non-struct array object.
+    'Name'                           'File'                                 'Line'
+    'testCreatePropertyWithValue'    'D:\Git\nix-mx\tests\TestSection.m'    [ 209]
+    'wrapper'                        'D:\Git\nix-mx\tests\wrapper.m'        [  16]
+    'RunTests'                       'D:\Git\nix-mx\tests\RunTests.m'       [  40]
+    'startuptests'                   'D:\Git\nix-mx\startuptests.m'         [   2]
+
+Test testDeleteProperty ... OK
+Test testOpenProperty ... OK
+Test testOpenPropertyIdx ... OK
+Test testPropertyCount ... OK
+Test testLink ... OK
+Test testInheritedProperties ... OK
+Test testReferringDataArrays ... OK
+Test testReferringBlockDataArrays ... OK
+Test testReferringTags ... OK
+Test testReferringBlockTags ... OK
+Test testReferringMultiTags ... OK
+Test testReferringBlockMultiTags ... OK
+Test testReferringSources ... OK
+Test testReferringBlockSources ... OK
+Test testReferringBlocks ... OK
+Test testCompare ... OK
+Test testFilterSection ... OK
+Test testFilterProperty ... OK
+Test testFindSection ... OK
+Test testFilterFindSections ... OK
+Test testFindRelated ... OK
+
+Execute FEATURE tests:
+
+Test testOpenData ... OK
+Test testHandleLinkType ... OK
+Test testSetData ... OK
+
+Execute PROPERTY tests:
+
+Test testAttributes ... OK
+Test testUpdateValues ... ERROR
+	Struct contents reference from a non-struct array object.
+    'Name'                'File'                                  'Line'
+    'testUpdateValues'    'D:\Git\nix-mx\tests\TestProperty.m'    [  66]
+    'wrapper'             'D:\Git\nix-mx\tests\wrapper.m'         [  16]
+    'RunTests'            'D:\Git\nix-mx\tests\RunTests.m'        [  40]
+    'startuptests'        'D:\Git\nix-mx\startuptests.m'          [   2]
+
+Test testValues ... ERROR
+	Struct contents reference from a non-struct array object.
+    'Name'            'File'                                  'Line'
+    'testValues'      'D:\Git\nix-mx\tests\TestProperty.m'    [  55]
+    'wrapper'         'D:\Git\nix-mx\tests\wrapper.m'         [  16]
+    'RunTests'        'D:\Git\nix-mx\tests\RunTests.m'        [  40]
+    'startuptests'    'D:\Git\nix-mx\startuptests.m'          [   2]
+
+Test testValueCount ... OK
+Test testDeleteValues ... OK
+Test testCompare ... OK
+
+Execute DIMENSIONS tests:
+
+Test testSetDimension ... OK
+Test testSampleDimension ... OK
+Test testRangeDimension ... OK
+
+Tests: 264 succeeded, 3 failed
