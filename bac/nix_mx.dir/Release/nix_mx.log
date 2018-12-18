@@ -1,0 +1,27 @@
+﻿  Building Custom Rule D:/Git/nix-mx/CMakeLists.txt
+  CMake does not need to re-run because D:/Git/nix-mx/build/CMakeFiles/generate.stamp is up-to-date.
+  nix_mx.cc
+D:\Git\nix-mx\nix_mx.cc(226): warning C4996: 'nix::DataArray::createSetDimension': was declared deprecated
+          D:\Git\nix\include\nix/DataArray.hpp(395) : see declaration of 'nix::DataArray::createSetDimension'
+D:\Git\nix-mx\nix_mx.cc(226): warning C4996: 'nix::DataArray::createRangeDimension': was declared deprecated
+          D:\Git\nix\include\nix/DataArray.hpp(411) : see declaration of 'nix::DataArray::createRangeDimension'
+D:\Git\nix-mx\nix_mx.cc(226): warning C4996: 'nix::DataArray::createAliasRangeDimension': was declared deprecated
+          D:\Git\nix\include\nix/DataArray.hpp(421) : see declaration of 'nix::DataArray::createAliasRangeDimension'
+D:\Git\nix-mx\nix_mx.cc(226): warning C4996: 'nix::DataArray::createSampledDimension': was declared deprecated
+          D:\Git\nix\include\nix/DataArray.hpp(437) : see declaration of 'nix::DataArray::createSampledDimension'
+  nixblock.cc
+  nixdataarray.cc
+  nixdimensions.cc
+  nixfeature.cc
+  nixfile.cc
+  nixgroup.cc
+  nixmultitag.cc
+  nixproperty.cc
+  nixsection.cc
+  nixsource.cc
+  nixtag.cc
+  mkarray.cc
+  mknix.cc
+  Generating Code...
+     Creating library D:/Git/nix-mx/build/Release/nix_mx.lib and object D:/Git/nix-mx/build/Release/nix_mx.exp
+  nix_mx.vcxproj -> D:\Git\nix-mx\build\Release\nix_mx.mexw64

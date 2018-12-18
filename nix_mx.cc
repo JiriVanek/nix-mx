@@ -444,6 +444,7 @@ void mexFunction(int            nlhs,
             .reg("setNoneDefinition", SETTER(const boost::none_t, nix::Property, definition))
             .reg("setUnit", SETTER(const std::string&, nix::Property, unit))
             .reg("setNoneUnit", SETTER(const boost::none_t, nix::Property, unit))
+			.reg("setUncertainty", SETTER(double, nix::Property, uncertainty))
             .reg("valueCount", GETTER(nix::ndsize_t, nix::Property, valueCount))
             .reg("setNoneValue", SETTER(const boost::none_t, nix::Property, values));
 

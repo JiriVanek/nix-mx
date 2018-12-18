@@ -31,6 +31,8 @@ mxArray* make_mx_array_from_ds(const nix::DataSet &da);
 
 mxArray* make_mx_array(const nix::Value &value);
 
+mxArray* make_mx_array(const nix::Variant &value);
+
 mxArray* make_mx_array(const nix::NDSize &size);
 
 mxArray* make_mx_array(const nix::LinkType &ltype);
@@ -61,7 +63,7 @@ inline mxArray* make_mx_array(const std::vector<std::string> &v) {
     return data;
 }
 
-inline mxArray* make_mx_array(const std::vector<nix::Value> &v) {
+inline mxArray* make_mx_array(const std::vector<nix::Variant> &v) {
     if (v.empty()) {
         return nullptr;
     }

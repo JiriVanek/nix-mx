@@ -76,8 +76,8 @@ public:
         return mx_to_vector<T>(array[pos]);
     }
 
-    std::vector<nix::Value> vec(size_t pos) const {
-        return mx_to_values(array[pos]);
+    std::vector<nix::Variant> vec(size_t pos) const {
+        return mx_to_variant(array[pos]);
     }
 
     nix::NDSize ndsize(size_t pos) const {

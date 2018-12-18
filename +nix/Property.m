@@ -67,6 +67,7 @@ classdef Property < nix.Entity
             nix.Dynamic.addProperty(obj, 'definition', 'rw');
             nix.Dynamic.addProperty(obj, 'unit', 'rw');
             nix.Dynamic.addProperty(obj, 'datatype', 'r');
+            nix.Dynamic.addProperty(obj, 'uncertainty','rw')
         end
 
         function r = get.values(obj)

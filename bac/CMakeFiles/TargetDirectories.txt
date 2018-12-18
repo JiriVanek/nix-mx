@@ -1,0 +1,3 @@
+D:/Git/nix-mx/build/CMakeFiles/nix_mx.dir
+D:/Git/nix-mx/build/CMakeFiles/ALL_BUILD.dir
+D:/Git/nix-mx/build/CMakeFiles/ZERO_CHECK.dir

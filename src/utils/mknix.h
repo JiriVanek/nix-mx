@@ -65,10 +65,18 @@ std::vector<T> mx_to_vector(const mxArray *arr) {
 
 bool mx_to_bool(const mxArray *arr);
 
-nix::Value mx_to_value_from_scalar(const mxArray *arr);
 
-nix::Value mx_to_value_from_struct(const mxArray *arr);
+//nix::Value mx_to_value_from_scalar(const mxArray *arr);
 
-std::vector<nix::Value> mx_to_values(const mxArray *arr);
+//nix::Value mx_to_value_from_struct(const mxArray *arr);
+
+//std::vector<nix::Value> mx_to_values(const mxArray *arr);
+
+
+nix::Variant mx_to_variant_from_scalar(const mxArray *arr);
+
+nix::Variant mx_to_variant_from_struct(const mxArray *arr);
+
+std::vector<nix::Variant> mx_to_variant(const mxArray *arr);
 
 #endif

@@ -1,16 +1,16 @@
 @ECHO off
-SET MATLAB_BINARY=c:\work\MATLAB_R2011a\bin
+SET MATLAB_BINARY=D:\Programs\MATLAB_R2016b\bin
 REM Latest Boost dependencies at https://projects.g-node.org/nix/
-SET NIX_DEP=c:\work\nix-dep
+SET NIX_DEP=D:\Git\nix-dep
 REM clone nix source from https://github.com/G-Node/nix
-SET NIX_ROOT=c:\work\nix
-SET NIX_MX_ROOT=c:\work\nix-mx
+SET NIX_ROOT=D:\Git\nix
+SET NIX_MX_ROOT=D:\Git\nix-mx
 REM This build script requires HDF5 version 1.10.1
 REM Latest HDF5 dependencies for VS 2013 at https://www.hdfgroup.org/downloads/hdf5/
 REM provide them at %NIX-DEP%\x86 or %NIX-DEP%\x64
 SET HDF5_VERSION_DIR=hdf5-1.10.1
 REM Static build requires cmake version 3.9.1
-SET CMAKEVER=3.9.1
+SET CMAKEVER=3.12
 REM Leave NIX_MX_ONLY "" for full nix and nix-mx build
 SET NIX_MX_ONLY=""
 
@@ -94,7 +94,7 @@ IF %PROCESSOR_ARCHITECTURE% == x86 ( cmake .. -DBUILD_STATIC=ON -G "Visual Studi
 ECHO --------------------------------------------------------------------------
 ECHO Building nix via %NIX_ROOT%\build\nix.sln ...
 ECHO --------------------------------------------------------------------------
-cmake --build . --config %BUILD_TYPE% --target nix
+cmake --build . --config %BUILD_TYPE% --target nixio
 
 IF %ERRORLEVEL% == 1 (EXIT /b)
 
@@ -108,7 +108,7 @@ IF %ERRORLEVEL% == 1 (EXIT /b)
 ECHO --------------------------------------------------------------------------
 ECHO Building nix-tool ...
 ECHO --------------------------------------------------------------------------
-cmake --build . --config %BUILD_TYPE% --target nix-tool
+cmake --build . --config %BUILD_TYPE% --target nixio-tool
 
 IF %ERRORLEVEL% == 1 (EXIT /b)
 
@@ -146,7 +146,7 @@ IF %ERRORLEVEL% == 1 (EXIT /b)
 REM Copying required nix-mx.mex file to nix-mx root folder
 COPY %NIX_MX_ROOT%\build\%BUILD_TYPE%\nix_mx.mexw* %NIX_MX_ROOT%\ /Y
 REM Provide nix-tool as well for validation and content display
-COPY %NIX_ROOT%\build\%BUILD_TYPE%\nix-tool.exe %NIX_MX_ROOT%\ /Y
+COPY %NIX_ROOT%\build\%BUILD_TYPE%\nixio-tool.exe %NIX_MX_ROOT%\ /Y
 
 CD %NIX_MX_ROOT%
 
